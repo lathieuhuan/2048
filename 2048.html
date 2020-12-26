@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="2048.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex col-4" id="left-col">
+      <h1>2048</h1>
+      <div class="flex" id="stats">
+        <p class="desc">Your Score</p>
+        <p class="num" id="score">0</p>
+        <p id="extra">+0</p>
+        <p class="desc">Best Record</p>
+        <p class="num" id="best">0</p>
+      </div>
+      <button id="restart">Restart</button>
+    </div>
+    <div class="flex col-4" id="center-col">
+      <div class="flex" id="playground">
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <input type="button" class="tile empty" value="" />
+        <div class="flex hidden" id="block">
+          <p>Game over</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4" id="right-col">
+      <p class="desc">How to play:</p>
+      <p id="instruction">
+        Use Arrow Keys to move the tiles. When a couple of same tiles collide
+        they will merge into one and the numbers inside are doubled. Try to
+        reach the number 2048!
+      </p>
+    </div>
+  </body>
+  <script src="2048.js"></script>
+</html>
